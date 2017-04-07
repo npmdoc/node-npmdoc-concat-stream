@@ -1,11 +1,13 @@
-# api documentation for  [concat-stream (v1.6.0)](https://github.com/maxogden/concat-stream)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-concat-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-concat-stream)
+# api documentation for  [concat-stream (v1.6.0)](https://github.com/maxogden/concat-stream)  [![npm package](https://img.shields.io/npm/v/npmdoc-concat-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-concat-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-concat-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-concat-stream)
 #### writable stream that concatenates strings or binary data and calls a callback with the result
 
 [![NPM](https://nodei.co/npm/concat-stream.png?downloads=true)](https://www.npmjs.com/package/concat-stream)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-concat-stream/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-concat_stream_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-concat-stream/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-concat-stream/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-concat-stream_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-concat-stream/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-concat-stream/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-concat-stream/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-concat-stream/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
