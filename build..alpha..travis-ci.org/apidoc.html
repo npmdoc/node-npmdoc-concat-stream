@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.concat-stream.concat-stream">
+            function <span class="apidocSignatureSpan"></span>concat-stream
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.concat-stream.super_">
             function <span class="apidocSignatureSpan">concat-stream.</span>super_
             <span class="apidocSignatureSpan">(options)</span>
@@ -218,6 +227,47 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.concat-stream" id="apidoc.module.concat-stream">module concat-stream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concat-stream.concat-stream" id="apidoc.element.concat-stream.concat-stream">
+        function <span class="apidocSignatureSpan"></span>concat-stream
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ConcatStream(opts, cb) {
+  if (!(this instanceof ConcatStream)) return new ConcatStream(opts, cb)
+
+  if (typeof opts === &#x27;function&#x27;) {
+    cb = opts
+    opts = {}
+  }
+  if (!opts) opts = {}
+
+  var encoding = opts.encoding
+  var shouldInferEncoding = false
+
+  if (!encoding) {
+    shouldInferEncoding = true
+  } else {
+    encoding =  String(encoding).toLowerCase()
+    if (encoding === &#x27;u8&#x27; || encoding === &#x27;uint8&#x27;) {
+      encoding = &#x27;uint8array&#x27;
+    }
+  }
+
+  Writable.call(this, { objectMode: true })
+
+  this.encoding = encoding
+  this.shouldInferEncoding = shouldInferEncoding
+
+  if (cb) this.on(&#x27;finish&#x27;, function () { cb(this.getBody()) })
+  this.body = []
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
